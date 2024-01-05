@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.rishabhsingh.dWarden">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AppInitiation.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppInitiation.IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountsManagementSystem.RegistrationActivity"
+            android:parentActivityName=".AccountsManagementSystem.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountsManagementSystem.SignUpActivity"
+            android:parentActivityName=".AccountsManagementSystem.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountsManagementSystem.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomePageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RoomBookingActivity"
+            android:parentActivityName=".HomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNavTheme" />
+        <activity
+            android:name=".DonorSearchingSystem.BloodSearchActivity"
+            android:parentActivityName=".HomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNavTheme" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".HomePageActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

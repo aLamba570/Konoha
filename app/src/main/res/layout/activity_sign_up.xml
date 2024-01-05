@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/background_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/registrationForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="50dp">
+                <EditText
+                    android:layout_width="304dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editRollNo"
+                    android:hint="Roll Number"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:textColor="#000"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:layout_width="304dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editName"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:textColor="#000"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="324dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingTop="10dp"
+                android:textSize="18sp"
+                android:text="Branch   :  "
+                android:id="@+id/textBranch"
+                android:layout_alignParentLeft="true" />
+
+            <Spinner
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnerBranch"
+                android:layout_alignTop="@+id/textBranch"
+                android:layout_toRightOf="@+id/textBranch"
+                android:textColor="#000"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="324dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="10dp"
+                    android:textSize="18sp"
+                    android:text="Year       :  "
+                    android:id="@+id/textYear"
+                    android:layout_alignParentLeft="true" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/spinnerYear"
+                    android:layout_alignTop="@+id/textYear"
+                    android:layout_toRightOf="@+id/textYear"
+                    android:textColor="#000"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="324dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="10dp"
+                    android:textSize="18sp"
+                    android:text="Hostel   :  "
+                    android:id="@+id/textHostel"
+                    android:layout_alignParentLeft="true" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/spinnerHostel"
+                    android:layout_alignTop="@+id/textHostel"
+                    android:layout_toRightOf="@+id/textHostel"
+                    android:textColor="#000"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="324dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="10dp"
+                    android:textSize="18sp"
+                    android:text="Blood Group   :  "
+                    android:id="@+id/textBlood"
+                    android:layout_alignParentLeft="true" />
+
+                <Spinner
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/spinnerBlood"
+                    android:layout_alignTop="@+id/textBlood"
+                    android:layout_toRightOf="@+id/textBlood"
+                    android:textColor="#000"/>
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:layout_width="304dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editPercentage"
+                    android:hint="Contact Number"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:textColor="#000"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxBloodDonation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:text="Can you donate blood in case of an emergency?" />
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="10dp"
+                android:text="Update"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="#f50626"
+                android:textColor="#fff"
+                android:id="@+id/buttonUpdate" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

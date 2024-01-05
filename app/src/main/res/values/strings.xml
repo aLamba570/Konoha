@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">dWarden</string>
+    <string-array name="blood_group">
+        <item>--Select--</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+    <string-array name="branch">
+        <item>--Select--</item>
+        <item>CE</item>
+        <item>CH</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EE</item>
+        <item>IT</item>
+        <item>ME</item>
+    </string-array>
+    <string-array name="degree_year">
+        <item>--Select--</item>
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>Final</item>
+    </string-array>
+    <string-array name="hostel">
+        <item>--Select--</item>
+        <item>Vrindawan Bhawan</item>
+        <item>Saket Bhawan</item>
+        <item>Panchavati Bhawan</item>
+        <item>Jai Bharat Bhawan</item>
+        <item>Yashodhara Bhawan</item>
+        <item>Kalpana Chawala Bhawan</item>
+    </string-array>
+    <string name="title_activity_login">SignIn</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">LogIn</string>
+    <string name="action_sign_in_short">LogIn</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
